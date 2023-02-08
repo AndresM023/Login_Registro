@@ -1,0 +1,31 @@
+{% extends 'login.html' %}
+{% load static %}
+
+
+     {% block title %}
+    <title>Clave Nueva</title>
+    {% endblock %}
+
+
+    {% block main %}
+        <div class="container">
+            <div class="form pass">
+                <div class="form renovar">
+                    <h2>Contraseña Nueva</h2>
+                    <div class="inputBox">
+                        <input type="password" required>
+                        <i class="fa-solid fa-lock" id="emoji"></i>
+                        <span class='spa'>Contraseña</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required>
+                        <i class="fa-solid fa-lock"></i>
+                        <span class='spa'>Confirmar contraseña</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Cambiar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}

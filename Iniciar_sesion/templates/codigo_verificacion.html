@@ -1,0 +1,27 @@
+{% extends 'login.html' %}
+{% load static %}
+
+
+     {% block title %}
+    <title>Codigo</title>
+    {% endblock %}
+
+
+    {% block main %}
+        <div class="container">
+            <div class="form pass">
+                <div class="form code">
+                    <h2>Código de Verificación</h2>
+                    <div class="inputBox">
+                        <input type="number">
+                        <i class="fa-solid fa-hashtag" id="emoji"></i>
+                        <span class='spa'>Insertar código</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value='Ingresar' class="cod">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
